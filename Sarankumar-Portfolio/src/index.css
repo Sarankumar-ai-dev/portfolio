@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #7c3aed, #a78bfa);
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+}
+
+.glow-purple-sm {
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
+}
