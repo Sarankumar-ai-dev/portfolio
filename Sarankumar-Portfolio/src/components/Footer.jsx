@@ -21,7 +21,7 @@ const socials = [
   {
     icon: Mail,
     href:
-      'https://mail.google.com/mail/u/0/?fs=1&to=sarankumar.ai.dev@gmail.com&tf=cm',
+      'mailto:sarankumar.ai.dev@gmail.com',
     label: 'Email',
   },
   {
