@@ -10,7 +10,7 @@ const infos = [
     icon: Mail,
     label: 'Email',
     value: 'sarankumar.ai.dev@gmail.com',
-    href:  'https://mail.google.com/mail/u/0/?fs=1&to=sarankumar.ai.dev@gmail.com&tf=cm',
+    href:  'mailto:sarankumar.ai.dev@gmail.com',
     color: '#7C3AED',
   },
 
