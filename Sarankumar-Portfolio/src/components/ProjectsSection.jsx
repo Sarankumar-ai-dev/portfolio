@@ -16,7 +16,7 @@ const projects = [
 
     github: 'https://github.com/Sarankumar-ai-dev/weather_prediction',
 
-    live: 'weather-prediction-one-rust.vercel.app',
+    live: 'https://weather-prediction-one-rust.vercel.app',
   },
 
   {
@@ -28,7 +28,7 @@ const projects = [
     emoji: '🧩',
 
     github: 'https://github.com/Sarankumar-ai-dev/Quiz',
-    live: 'quizapplication-navy.vercel.app',
+    live: 'https://quizapplication-navy.vercel.app',
   },
 
   {
@@ -40,7 +40,7 @@ const projects = [
     emoji: '📝',
 
     github: 'https://github.com/Sarankumar-ai-dev/todo-list-project',
-    live: 'todo-list-project-u8kd.vercel.app',
+    live: 'https://todo-list-project-u8kd.vercel.app',
   },
 ]
 

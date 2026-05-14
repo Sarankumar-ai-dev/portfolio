@@ -10,7 +10,7 @@ const infos = [
     icon: Mail,
     label: 'Email',
     value: 'sarankumar.ai.dev@gmail.com',
-    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=sarankumar.ai.dev@gmail.com',
+    href:  'https://mail.google.com/mail/u/0/?fs=1&to=sarankumar.ai.dev@gmail.com&tf=cm',
     color: '#7C3AED',
   },
 
@@ -18,7 +18,7 @@ const infos = [
     icon: Linkedin,
     label: 'LinkedIn',
     value: 'linkedin.com/in/sarankumar',
-    href: 'https://www.linkedin.com/messaging/thread/2-NDYyNDAxMWEtYmUyNy00ZTUwLTkyMjQtZmMxNDA5YTMxMmVmXzEwMA==/',
+    href: 'https://www.linkedin.com/in/sarankumar-s-3b38362a4/',
     color: '#0A66C2',
   },
 ]

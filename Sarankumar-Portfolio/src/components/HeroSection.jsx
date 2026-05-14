@@ -32,7 +32,7 @@ const socials = [
   {
     icon: Mail,
     href:
-      'https://mail.google.com/mail/?view=cm&fs=1&to=sarankumar.ai.dev@gmail.com',
+       'https://mail.google.com/mail/u/0/?fs=1&to=sarankumar.ai.dev@gmail.com&tf=cm',
     label: 'Email',
   },
   {
@@ -74,6 +74,7 @@ export default function HeroSection({
       id="home"
       className="relative min-h-screen flex items-center pt-20 overflow-hidden"
     >
+      {/* Background */}
       <div
         className={`absolute inset-0 ${
           darkMode
@@ -85,6 +86,8 @@ export default function HeroSection({
 
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-brand-light/5 rounded-full blur-3xl" />
       </div>
+
+      {/* Floating Dots */}
       {dots.map((d, i) => (
         <motion.div
           key={i}
@@ -111,7 +114,7 @@ export default function HeroSection({
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-5rem)]">
 
-          {/* Left */}
+          {/* LEFT CONTENT */}
           <motion.div
             variants={container}
             initial="hidden"
@@ -136,6 +139,8 @@ export default function HeroSection({
                 AI Enthusiast
               </span>
             </motion.div>
+
+            {/* Heading */}
             <motion.div
               variants={item}
               className="mb-6"
@@ -154,6 +159,8 @@ export default function HeroSection({
                 Sarankumar
               </h1>
             </motion.div>
+
+            {/* Description */}
             <motion.p
               variants={item}
               className={`text-lg leading-relaxed mb-8 max-w-lg ${
@@ -170,10 +177,13 @@ export default function HeroSection({
               creating impactful
               solutions.
             </motion.p>
+
+            {/* Buttons */}
             <motion.div
               variants={item}
               className="flex flex-wrap gap-4 mb-10"
             >
+              {/* View Projects */}
               <motion.button
                 onClick={() =>
                   document
@@ -200,7 +210,6 @@ export default function HeroSection({
                 }`}
               >
                 View Projects
-
                 <ArrowRight size={16} />
               </motion.button>
 
@@ -229,10 +238,11 @@ export default function HeroSection({
                 }`}
               >
                 Contact Me
-
                 <Send size={14} />
               </motion.button>
             </motion.div>
+
+            {/* Social Icons */}
             <motion.div
               variants={item}
               className="flex items-center gap-3"
@@ -246,8 +256,16 @@ export default function HeroSection({
                   <motion.a
                     key={label}
                     href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={
+                      label !== 'Email'
+                        ? '_blank'
+                        : undefined
+                    }
+                    rel={
+                      label !== 'Email'
+                        ? 'noopener noreferrer'
+                        : undefined
+                    }
                     aria-label={label}
                     whileHover={{
                       scale: 1.15,
@@ -256,7 +274,7 @@ export default function HeroSection({
                     whileTap={{
                       scale: 0.9,
                     }}
-                    className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all ${
+                    className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all cursor-pointer ${
                       darkMode
                         ? 'border-white/20 text-gray-400 hover:border-brand-purple hover:text-brand-purple hover:bg-brand-purple/10'
                         : 'border-gray-300 text-gray-600 hover:border-brand-purple hover:text-brand-purple'
@@ -268,6 +286,8 @@ export default function HeroSection({
               )}
             </motion.div>
           </motion.div>
+
+          {/* RIGHT IMAGE */}
           <motion.div
             initial={{
               opacity: 0,
@@ -285,6 +305,7 @@ export default function HeroSection({
             className="flex justify-center lg:justify-end"
           >
             <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+              {/* Rotating Ring */}
               <motion.div
                 animate={{
                   rotate: 360,
@@ -297,6 +318,7 @@ export default function HeroSection({
                 className="absolute inset-0 rounded-full border-2 border-dashed border-brand-purple/30"
               />
 
+              {/* Inner Ring */}
               <motion.div
                 animate={{
                   rotate: -360,
@@ -308,6 +330,8 @@ export default function HeroSection({
                 }}
                 className="absolute inset-4 rounded-full border border-brand-light/20"
               />
+
+              {/* Profile Image */}
               <div
                 className={`absolute inset-6 rounded-full overflow-hidden border-4 border-brand-purple/40 glow-purple ${
                   darkMode
