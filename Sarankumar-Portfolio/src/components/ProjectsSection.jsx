@@ -16,7 +16,7 @@ const projects = [
 
     github: 'https://github.com/Sarankumar-ai-dev/resume_analyze',
 
-    live: 'resume-analyze-beige.vercel.app',
+    live: 'https://resume-analyze-beige.vercel.app',
   },
   {
     title: 'Weather Prediction App',
