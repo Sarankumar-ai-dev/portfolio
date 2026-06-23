@@ -10,7 +10,7 @@ const projects = [
     title: 'Resume Analyzer',
     desc:
       'AI-powered application tool that evaluates resumes,ATS score,chat bot',
-    tags: ['React', 'Django', 'Weather API'],
+    tags: ['React', 'Django', 'Generative AI'],
     color: '#0EA5E9',
     emoji: '🌤️',
 
