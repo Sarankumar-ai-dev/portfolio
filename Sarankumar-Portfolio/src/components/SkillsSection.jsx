@@ -40,7 +40,7 @@ const categories = [
       },
 
       {
-        name: 'REST APIs',
+        name: 'FAST APIs',
         level: 80,
         icon: Box,
       },
@@ -80,8 +80,13 @@ const categories = [
       },
 
       {
-        name: 'Generative AI (Basic)',
+        name: 'Generative AI',
         level: 68,
+        icon: Brain,
+      },
+      {
+        name: 'AI Automation',
+        level: 64,
         icon: Brain,
       },
     ],
