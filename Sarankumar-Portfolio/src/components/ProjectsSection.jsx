@@ -7,6 +7,18 @@ import {
 
 const projects = [
   {
+    title: 'Resume Analyzer',
+    desc:
+      'AI-powered application tool that evaluates resumes,ATS score,chat bot',
+    tags: ['React', 'Django', 'Weather API'],
+    color: '#0EA5E9',
+    emoji: '🌤️',
+
+    github: 'https://github.com/Sarankumar-ai-dev/resume_analyze',
+
+    live: 'resume-analyze-beige.vercel.app',
+  },
+  {
     title: 'Weather Prediction App',
     desc:
       'Real-time weather forecasting application with interactive UI and API integration.',
